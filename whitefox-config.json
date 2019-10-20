@@ -1,16 +1,15 @@
 {
     "header": {
-        "Variant": "truefox",
-        "Generator": "KIICONF 0.2",
-        "Base": "TheTrueFoxBase",
-        "Date": "2016-05-30",
-        "KLL": "0.3c",
-        "Author": "HaaTa (Jacob Alexander) 2015",
-        "Version": "0.2",
         "Name": "WhiteFox",
-        "Layout": "TrueFoxBlank"
+        "Variant": "aria",
+        "Layout": "AriaBlank",
+        "Base": "AriaBase",
+        "Version": "0.2",
+        "Author": "eliias (Hannes Moser) 2019",
+        "KLL": "0.3c",
+        "Date": "2019-10-20",
+        "Generator": "KIICONF 0.2"
     },
-    "defines": [],
     "matrix": [
         {
             "code": "0x00",
@@ -20,8 +19,8 @@
             "h": 4,
             "layers": {
                 "0": {
-                    "key": "ESC",
-                    "label": "ESC"
+                    "key": "`",
+                    "label": "`"
                 },
                 "1": {
                     "key": "#:toggleKbdProtocol()",
@@ -109,8 +108,8 @@
                     "label": "5"
                 },
                 "1": {
-                    "key": "F5",
-                    "label": "F5"
+                    "key": "CONS:BRIGHTNESSDECREMENT",
+                    "label": "SCRN-"
                 }
             }
         },
@@ -126,8 +125,8 @@
                     "label": "6"
                 },
                 "1": {
-                    "key": "F6",
-                    "label": "F6"
+                    "key": "CONS:BRIGHTNESSINCREMENT",
+                    "label": "SCRN+"
                 }
             }
         },
@@ -143,8 +142,8 @@
                     "label": "7"
                 },
                 "1": {
-                    "key": "F7",
-                    "label": "F7"
+                    "key": "CONS:SCANPREVTRACK",
+                    "label": "PREV"
                 }
             }
         },
@@ -160,8 +159,8 @@
                     "label": "8"
                 },
                 "1": {
-                    "key": "F8",
-                    "label": "F8"
+                    "key": "CONS:PAUSEPLAY",
+                    "label": "PL/PS"
                 }
             }
         },
@@ -177,8 +176,8 @@
                     "label": "9"
                 },
                 "1": {
-                    "key": "F9",
-                    "label": "F9"
+                    "key": "CONS:SCANNEXTTRACK",
+                    "label": "NEXT"
                 }
             }
         },
@@ -194,8 +193,8 @@
                     "label": "0"
                 },
                 "1": {
-                    "key": "F10",
-                    "label": "F10"
+                    "key": "CONS:MUTE",
+                    "label": "MUTE"
                 }
             }
         },
@@ -211,8 +210,8 @@
                     "label": "-"
                 },
                 "1": {
-                    "key": "F11",
-                    "label": "F11"
+                    "key": "CONS:VOLUMEDOWN",
+                    "label": "VOL-"
                 }
             }
         },
@@ -228,42 +227,21 @@
                     "label": "="
                 },
                 "1": {
-                    "key": "F12",
-                    "label": "F12"
-                }
-            }
-        },
-        {
-            "code": "0x0D",
-            "x": 52,
-            "y": 0,
-            "w": 4,
-            "h": 4,
-            "layers": {
-                "0": {
-                    "key": "\\",
-                    "label": "\\"
-                },
-                "1": {
-                    "key": "CONS:BRIGHTNESSDECREMENT",
-                    "label": "SCRN-"
+                    "key": "CONS:VOLUMEUP",
+                    "label": "VOL+"
                 }
             }
         },
         {
             "code": "0x0E",
-            "x": 56,
+            "x": 52,
             "y": 0,
-            "w": 4,
+            "w": 8,
             "h": 4,
             "layers": {
                 "0": {
-                    "key": "`",
-                    "label": "`"
-                },
-                "1": {
-                    "key": "CONS:BRIGHTNESSINCREMENT",
-                    "label": "SCRN+"
+                    "key": "BACKSPACE",
+                    "label": "BKSP"
                 }
             }
         },
@@ -465,12 +443,8 @@
             "h": 4,
             "layers": {
                 "0": {
-                    "key": "BACKSPACE",
-                    "label": "BKSP"
-                },
-                "1": {
-                    "key": "#:ledControl( 5, 255 )",
-                    "label": "LED TOG"
+                    "key": "\\",
+                    "label": "\\"
                 }
             }
         },
@@ -484,10 +458,6 @@
                 "0": {
                     "key": "DELETE",
                     "label": "DEL"
-                },
-                "1": {
-                    "key": "CONS:MUTE",
-                    "label": "MUTE"
                 }
             }
         },
@@ -499,8 +469,8 @@
             "h": 4,
             "layers": {
                 "0": {
-                    "key": "FUNCTION1",
-                    "label": "ƒ1"
+                    "key": "ESC",
+                    "label": "ESC"
                 }
             }
         },
@@ -657,10 +627,6 @@
                 "0": {
                     "key": "ENTER",
                     "label": "↵"
-                },
-                "1": {
-                    "key": "PRINTSCREEN",
-                    "label": "PRSC"
                 }
             }
         },
@@ -672,12 +638,8 @@
             "h": 4,
             "layers": {
                 "0": {
-                    "key": "HOME",
-                    "label": "HOME"
-                },
-                "1": {
-                    "key": "CONS:VOLUMEUP",
-                    "label": "VOL+"
+                    "key": "PAGEUP",
+                    "label": "PGUP"
                 }
             }
         },
@@ -847,10 +809,6 @@
                 "0": {
                     "key": "UP",
                     "label": "↑"
-                },
-                "1": {
-                    "key": "PAGEUP",
-                    "label": "PGUP"
                 }
             }
         },
@@ -862,12 +820,8 @@
             "h": 4,
             "layers": {
                 "0": {
-                    "key": "END",
-                    "label": "END"
-                },
-                "1": {
-                    "key": "CONS:VOLUMEDOWN",
-                    "label": "VOL-"
+                    "key": "PAGEDOWN",
+                    "label": "PGDN"
                 }
             }
         },
@@ -920,10 +874,6 @@
                 "0": {
                     "key": "SPACE",
                     "label": "[ ]"
-                },
-                "1": {
-                    "key": "CONS:PAUSEPLAY",
-                    "label": "PL/PS"
                 }
             }
         },
@@ -963,10 +913,6 @@
                 "0": {
                     "key": "LEFT",
                     "label": "←"
-                },
-                "1": {
-                    "key": "CONS:SCANPREVIOUSTRACK",
-                    "label": "PREV"
                 }
             }
         },
@@ -980,10 +926,6 @@
                 "0": {
                     "key": "DOWN",
                     "label": "↓"
-                },
-                "1": {
-                    "key": "PAGEDOWN",
-                    "label": "PGDN"
                 }
             }
         },
@@ -997,16 +939,10 @@
                 "0": {
                     "key": "RIGHT",
                     "label": "→"
-                },
-                "1": {
-                    "key": "CONS:SCANNEXTTRACK",
-                    "label": "NEXT"
                 }
             }
         }
     ],
-    "leds": [],
-    "custom": {},
     "animations": {
         "all_on": {
             "settings": "start, pfunc:interp",
@@ -1014,5 +950,10 @@
                 "P[c:0%](255), P[c:100%](255)"
             ]
         }
-    }
+    },
+    "defines": [],
+    "leds": [],
+    "custom": {},
+    "macros": {},
+    "canned": {}
 }
